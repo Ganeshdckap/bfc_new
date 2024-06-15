@@ -275,6 +275,72 @@ a:focus {
   height: 20px;
 }
 
+.whatsapp-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.icon-container {
+  background-color: #EC5E80;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-container:hover {
+  background-color: #4472FF;
+}
+
+.icon-container img,
+.icon-container span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container span {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-container {
+    right: 10px;
+    bottom: 10px;
+  }
+  .icon-container img,
+  .icon-container span {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .whatsapp-container {
+    right: 5px;
+    bottom: 5px;
+  }
+  .icon-container img,
+  .icon-container span {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
 .department_section {
   position: relative;
 }

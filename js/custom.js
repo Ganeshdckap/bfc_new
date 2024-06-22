@@ -14,13 +14,13 @@ $(".client_owl-carousel").owlCarousel({
     margin: 0,
     dots: false,
     nav: true,
-    navText: [],
-    autoplay: true,
-    autoplayHoverPause: true,
     navText: [
         '<i class="fa fa-angle-left" aria-hidden="true"></i>',
         '<i class="fa fa-angle-right" aria-hidden="true"></i>'
     ],
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 3000, // Slide duration set to 3 seconds
     responsive: {
         0: {
             items: 1
@@ -33,6 +33,7 @@ $(".client_owl-carousel").owlCarousel({
         }
     }
 });
+
 
 
 

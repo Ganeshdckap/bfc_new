@@ -84,3 +84,70 @@ function sendwhatsapp(){
        +"*Message:* "+message+"%0a%0a"
        window.open(url, '_blank').focus();
 }
+
+
+/* Nav-link */
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll('.nav-item .nav-link');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active-link');
+      }
+    });
+  });
+/* Nav-link */
+
+  // JavaScript to toggle fade-in class on Read More button click
+  document.addEventListener("DOMContentLoaded", function () {
+    var readMoreButtons = document.querySelectorAll('.btn1');
+  
+    readMoreButtons.forEach(function(button) {
+      button.addEventListener('click', function(event) {
+        event.preventDefault();
+  
+        // Find the parent .detail-box element
+        var detailBox = this.closest('.detail-box');
+  
+        // Add animation class
+        detailBox.classList.add('animate-slide-in');
+  
+        // Optional: Remove animation class after animation ends
+        detailBox.addEventListener('animationend', function() {
+          detailBox.classList.remove('animate-slide-in');
+        }, {once: true});
+      });
+    });
+  });
+  
+  
+//   <!-- newsletterForm  -->
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("newsletterForm");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Validate email format (you may use a more sophisticated method here)
+        const email = document.getElementById("emailInput").value;
+        if (!isValidEmail(email)) {
+          alert("Please enter a valid email address.");
+          return;
+        }
+
+        // Simulate form submission (replace with actual submission logic)
+        alert(`Subscribing email: ${email}`);
+
+        // Optionally, clear the input after submission
+        document.getElementById("emailInput").value = "";
+      });
+
+      function isValidEmail(email) {
+        // Very basic email validation using regex
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+      }
+    });
+
+//   <!--END  newsletterForm  -->

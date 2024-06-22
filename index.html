@@ -56,7 +56,6 @@
               <img src="images/logo8.png" alt="BFC Logo" style="height: 80px" />
               <!-- <span> BFC </span> -->
             </a>
-
             <button
               class="navbar-toggler"
               type="button"
@@ -68,16 +67,13 @@
             >
               <span class=""> </span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"
-                    >Home <span class="sr-only">(current)</span></a
-                  >
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
+                  <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="departments.html">Departments</a>
@@ -96,12 +92,6 @@
                     >Book appointment</a
                   >
                 </li>
-
-                <!-- <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form> -->
               </ul>
             </div>
           </nav>
@@ -137,16 +127,15 @@
                 <div class="row">
                   <div class="col-md-7">
                     <div class="detail-box">
-                      <h1>We Provide Best Healthcare</h1>
+                      <h1>Baby Steps Fertility Centre MADURAVOYAL</h1>
                       <p>
-                        Explicabo esse amet tempora quibusdam laudantium,
-                        laborum eaque magnam fugiat hic? Esse dicta aliquid
-                        error repudiandae earum suscipit fugiat molestias,
-                        veniam, vel architecto veritatis delectus repellat modi
-                        impedit sequi.
+                        Take your 👣 First step towards Happiness with Baby
+                        Steps Fertility Centre, Maduravoyal Chennaj-95 Having 30
+                        Years Of Expertise in Top Rated Hospital's Doctors TN &
+                        AP.
                       </p>
                       <div class="btn-box">
-                        <a href="" class="btn1"> Read More </a>
+                        <a href="#about_section" class="btn1"> Read More </a>
                       </div>
                     </div>
                   </div>
@@ -158,16 +147,15 @@
                 <div class="row">
                   <div class="col-md-7">
                     <div class="detail-box">
-                      <h1>We Provide Best Healthcare</h1>
+                      <h1>Baby Steps Fertility Centre MADURAVOYAL</h1>
                       <p>
-                        Explicabo esse amet tempora quibusdam laudantium,
-                        laborum eaque magnam fugiat hic? Esse dicta aliquid
-                        error repudiandae earum suscipit fugiat molestias,
-                        veniam, vel architecto veritatis delectus repellat modi
-                        impedit sequi.
+                        Take your 👣 First step towards Happiness with Baby
+                        Steps Fertility Centre, Maduravoyal Chennaj-95 Having 30
+                        Years Of Expertise in Top Rated Hospital's Doctors TN &
+                        AP.
                       </p>
                       <div class="btn-box">
-                        <a href="" class="btn1"> Read More </a>
+                        <a href="#about_section" class="btn1"> Read More </a>
                       </div>
                     </div>
                   </div>
@@ -467,14 +455,16 @@
               <div class="map">
                 <div id="googleMap">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5693620144075!2d80.17466069999999!3d13.0630607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261fe9382e269%3A0x869fc3dd97e7b0cc!2sBaby%20steps%20fertility%20centre!5e0!3m2!1sen!2sin!4v1718436664151!5m2!1sen!2sin"
-                    width="600"
-                    height="450"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5693620144075!2d80.17466069999999!3d13.0630607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261fe9382e269%3A0x869fc3dd97e7b0cc!2sBaby%20steps%20fertility%20centre!5e0!3m2!1sen!2sin!4v1718436664151!5m2!1sen!2sin"
+                  width="520"
+                  height="370"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe>                
                 </div>
               </div>
             </div>
@@ -676,6 +666,7 @@
                 name="email"
                 placeholder="Enter email"
                 required
+                autocomplete="off"
               />
               <button type="submit" id="subscribeButton">Subscribe</button>
             </form>
@@ -716,36 +707,5 @@
   </script> -->
 
     <!-- End Google Map -->
-
-    <!-- newsletterForm  -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("newsletterForm");
-
-        form.addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent the default form submission
-
-          // Validate email format (you may use a more sophisticated method here)
-          const email = document.getElementById("emailInput").value;
-          if (!isValidEmail(email)) {
-            alert("Please enter a valid email address.");
-            return;
-          }
-
-          // Simulate form submission (replace with actual submission logic)
-          alert(`Subscribing email: ${email}`);
-
-          // Optionally, clear the input after submission
-          document.getElementById("emailInput").value = "";
-        });
-
-        function isValidEmail(email) {
-          // Very basic email validation using regex
-          const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          return regex.test(email);
-        }
-      });
-    </script>
-    <!--END  newsletterForm  -->
   </body>
 </html>

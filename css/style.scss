@@ -1,14 +1,14 @@
 $white: #ffffff;
 $black: #000000;
-$primary1: #EC5E80;
-$primary2: #4472FF; 
+$primary1: #ec5e80;
+$primary2: #4472ff;
 $textCol: #1f1f1f;
 
 // import fonts - font-family: 'Nunito', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 @mixin main-font {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
@@ -23,7 +23,6 @@ $textCol: #1f1f1f;
   &:hover {
     background-color: transparent;
     color: $col1;
-
   }
 }
 
@@ -155,11 +154,12 @@ a:focus {
   background-color: white;
   border-bottom: 1px solid #ccc; /* Changed border color to light gray */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
 
-  .container-fluid {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
+/* Add this to your CSS file */
+.nav-link.active-link {
+  font-weight: bold; /* Example style */
+  color: $primary2 !important; /* Example style */
 }
 
 .navbar-brand {
@@ -180,19 +180,18 @@ a:focus {
     .nav-item {
       .nav-link {
         padding: 5px 20px;
-        color: #1f1f1f;
+        color: $textCol;
         text-align: center;
         text-transform: uppercase;
         border-radius: 5px;
         transition: all 0.3s;
-        
+
         &:hover {
-          color: $primary1; 
+          color: $primary1;
           background-color: #f0f0f0;
         }
       }
     }
-    
   }
 }
 
@@ -347,8 +346,7 @@ a:focus {
 
 // end slider section
 
-// whatsapp bookappoinment 
-
+// whatsapp bookappoinment
 
 .whatsapp-container {
   position: fixed;
@@ -394,29 +392,29 @@ a:focus {
 
 @media (max-width: 768px) {
   .whatsapp-container {
-      right: 10px;
-      bottom: 10px;
+    right: 10px;
+    bottom: 10px;
   }
 
   .icon-container img,
   .icon-container span {
-      width: 25px;
-      height: 25px;
-      font-size: 14px;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
   .whatsapp-container {
-      right: 5px;
-      bottom: 5px;
+    right: 5px;
+    bottom: 5px;
   }
 
   .icon-container img,
   .icon-container span {
-      width: 20px;
-      height: 20px;
-      font-size: 12px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
   }
 }
 
@@ -458,7 +456,8 @@ a:focus {
         text-transform: uppercase;
       }
 
-      p {}
+      p {
+      }
 
       a {
         color: $primary2;
@@ -561,7 +560,7 @@ a:focus {
         border-radius: 5px;
         display: flex;
         opacity: 0;
-        transition: all .3s;
+        transition: all 0.3s;
 
         a {
           color: $primary1;
@@ -679,7 +678,7 @@ a:focus {
       img {
         width: 100%;
         border-radius: 100%;
-        border: 7px solid rgba($color: #fff, $alpha: .45);
+        border: 7px solid rgba($color: #fff, $alpha: 0.45);
       }
     }
 
@@ -688,7 +687,6 @@ a:focus {
       flex-direction: column;
 
       .name {
-
         img {
           width: 25px;
           margin-bottom: 5px;
@@ -764,7 +762,7 @@ a:focus {
         }
 
         &:hover {
-          color: $primary1;
+          color: $textCol;
         }
       }
     }
@@ -785,7 +783,7 @@ a:focus {
       font-size: 24px;
 
       &:hover {
-        color: $primary1;
+        color: $textCol;
       }
     }
   }
@@ -802,7 +800,7 @@ a:focus {
       color: $white;
 
       &:hover {
-        color: $primary1;
+        color: $textCol;
       }
     }
   }
@@ -828,6 +826,11 @@ a:focus {
       text-align: center;
       @include hero_btn($primary1, $white, 10px, 55px, 5px);
       margin-top: 15px;
+
+      &:hover {
+        background-color: lighten(white, 10%); // Change hover background color
+        color: $primary1; // Change text color on hover
+      }
     }
   }
 
@@ -845,5 +848,22 @@ a:focus {
     }
   }
 }
-
 // end footer section
+
+/* CSS for fade-in animation */
+/* Define the animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to elements */
+.detail-box {
+  animation: slideIn 0.5s ease forwards;
+}

@@ -124,8 +124,8 @@ a:focus {
 
 .navbar-brand span {
   font-weight: bold;
-  font-size: 24px;
-  color: #ffffff;
+  font-size: 16px;
+  color: #ec5e80;
   text-transform: uppercase;
 }
 
@@ -173,7 +173,7 @@ a:focus {
   display: block;
   width: 35px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #1f1f1f;
   margin: 7px 0;
   transition: all 0.3s;
   position: relative;
@@ -186,7 +186,7 @@ a:focus {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #1f1f1f;
   top: -10px;
   border-radius: 5px;
   transition: all 0.3s;
@@ -353,7 +353,10 @@ a:focus {
 .department_section {
   position: relative;
 }
-.department_section .box {
+.department_section .row {
+  justify-content: center;
+}
+.department_section .row .box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,7 +365,7 @@ a:focus {
   border-radius: 5px;
   text-align: center;
 }
-.department_section .box .img-box {
+.department_section .row .box .img-box {
   width: 90px;
   height: 90px;
   margin-bottom: 15px;
@@ -372,20 +375,20 @@ a:focus {
   justify-content: center;
   align-items: center;
 }
-.department_section .box .img-box img {
+.department_section .row .box .img-box img {
   max-width: 55px;
   max-height: 55px;
   transition: all 0.3s;
 }
-.department_section .box .detail-box h5 {
+.department_section .row .box .detail-box h5 {
   font-weight: bold;
   text-transform: uppercase;
 }
-.department_section .box .detail-box a {
+.department_section .row .box .detail-box a {
   color: #4472ff;
   font-weight: 600;
 }
-.department_section .box .detail-box a:hover {
+.department_section .row .box .detail-box a:hover {
   color: #ec5e80;
 }
 .department_section .btn-box {
@@ -498,15 +501,15 @@ a:focus {
 .doctor_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #4472ff;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #4472ff;
   border-radius: 5px;
   transition: all 0.3s;
-  border: 1px solid #4472ff;
+  border: 1px solid #ffffff;
 }
 .doctor_section .btn-box a:hover {
   background-color: transparent;
-  color: #4472ff;
+  color: #ffffff;
 }
 
 .contact_section {
@@ -632,33 +635,37 @@ a:focus {
   padding: 60px 0 15px 0;
   position: relative;
 }
-.footer_section h4 {
+.footer_section .row {
+  justify-content: center;
+  gap: 80px;
+}
+.footer_section .row h4 {
   font-weight: 600;
   margin-bottom: 20px;
 }
-.footer_section .footer_col {
+.footer_section .row .footer_col {
   margin-bottom: 30px;
 }
-.footer_section .footer_contact .contact_link_box {
+.footer_section .row .footer_contact .contact_link_box {
   display: flex;
   flex-direction: column;
 }
-.footer_section .footer_contact .contact_link_box a {
+.footer_section .row .footer_contact .contact_link_box a {
   margin: 5px 0;
   color: #ffffff;
 }
-.footer_section .footer_contact .contact_link_box a i {
+.footer_section .row .footer_contact .contact_link_box a i {
   margin-right: 5px;
 }
-.footer_section .footer_contact .contact_link_box a:hover {
+.footer_section .row .footer_contact .contact_link_box a:hover {
   color: #1f1f1f;
 }
-.footer_section .footer_social {
+.footer_section .row .footer_social {
   display: flex;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.footer_section .footer_social a {
+.footer_section .row .footer_social a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -667,24 +674,24 @@ a:focus {
   margin-right: 10px;
   font-size: 24px;
 }
-.footer_section .footer_social a:hover {
+.footer_section .row .footer_social a:hover {
   color: #1f1f1f;
 }
-.footer_section .footer_links {
+.footer_section .row .footer_links {
   display: flex;
   flex-wrap: wrap;
 }
-.footer_section .footer_links a {
+.footer_section .row .footer_links a {
   display: flex;
   align-items: center;
   margin-right: 15px;
   margin-bottom: 15px;
   color: #ffffff;
 }
-.footer_section .footer_links a:hover {
+.footer_section .row .footer_links a:hover {
   color: #1f1f1f;
 }
-.footer_section form input {
+.footer_section .row form input {
   border: none;
   background-color: #fefefe;
   width: 100%;
@@ -694,10 +701,10 @@ a:focus {
   border-radius: 5px;
   padding: 0 15px;
 }
-.footer_section form input::placeholder {
+.footer_section .row form input::placeholder {
   color: #777;
 }
-.footer_section form button {
+.footer_section .row form button {
   width: 100%;
   text-align: center;
   display: inline-block;
@@ -709,11 +716,11 @@ a:focus {
   border: 1px solid #ec5e80;
   margin-top: 15px;
 }
-.footer_section form button:hover {
+.footer_section .row form button:hover {
   background-color: transparent;
   color: #ec5e80;
 }
-.footer_section form button:hover {
+.footer_section .row form button:hover {
   background-color: white;
   color: #ec5e80;
 }

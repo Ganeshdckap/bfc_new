@@ -35,7 +35,7 @@ body {
 }
 
 .layout_margin-bottom {
-  margin-bottom: 90px;
+  margin-top: 90px;
 }
 
 .heading_container {
@@ -124,7 +124,7 @@ a:focus {
 
 .navbar-brand span {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   color: #ec5e80;
   text-transform: uppercase;
 }
@@ -229,10 +229,10 @@ a:focus {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #1f1f1f;
 }
 .slider_section .detail-box p {
-  color: #fefefe;
+  color: #1f1f1f;
   font-size: 14px;
 }
 .slider_section .detail-box .btn-box {
@@ -295,7 +295,7 @@ a:focus {
 }
 
 .icon-container {
-  background-color: #ec5e80;
+  background-color: #ffffff;
   border-radius: 50%;
   padding: 10px;
   margin-bottom: 10px;

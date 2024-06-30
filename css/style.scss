@@ -67,7 +67,7 @@ body {
 }
 
 .layout_margin-bottom {
-  margin-bottom: 90px;
+  margin-top: 90px;
 }
 
 .heading_container {
@@ -165,7 +165,7 @@ a:focus {
 .navbar-brand {
   span {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     color: $primary1;
     text-transform: uppercase;
   }
@@ -288,11 +288,11 @@ a:focus {
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 15px;
-      color: $white;
+      color: $textCol;
     }
 
     p {
-      color: #fefefe;
+      color: $textCol;
       font-size: 14px;
     }
 
@@ -359,7 +359,7 @@ a:focus {
 }
 
 .icon-container {
-  background-color: $primary1;
+  background-color: $white;
   border-radius: 50%;
   padding: 10px;
   margin-bottom: 10px;
@@ -596,6 +596,10 @@ a:focus {
 
 // end doctor section
 
+//  Gallery section
+
+
+//  Gallery section end
 // contact section
 .contact_section {
   position: relative;

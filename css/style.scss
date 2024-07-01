@@ -597,6 +597,143 @@ a:focus {
 // end doctor section
 
 //  Gallery section
+// SCSS code for gallery section and horizontal carousel
+
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$background-color: #fff;
+
+// Gallery Section
+.gallery_section {
+  padding: 60px 0;
+  background: $background-color;
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+
+    h2 {
+      font-size: 32px;
+      color: $primary-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 16px;
+      color: $text-color;
+    }
+  }
+
+  .gallery-slider {
+    position: relative;
+
+    .swiper-wrapper {
+      display: flex;
+      align-items: center;
+
+      .swiper-slide {
+        a {
+          display: block;
+
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+
+    .swiper-pagination {
+      text-align: center;
+      margin-top: 20px;
+
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: $secondary-color;
+        opacity: 1;
+        border-radius: 50%;
+        transition: background 0.3s;
+
+        &-active {
+          background: $primary-color;
+        }
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.5);
+      color: $background-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      cursor: pointer;
+
+      &:after {
+        font-size: 18px;
+      }
+    }
+
+    .swiper-button-next {
+      right: 10px;
+    }
+
+    .swiper-button-prev {
+      left: 10px;
+    }
+  }
+}
+
+// Swiper Styles
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: $background-color;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background: $primary-color;
+}
+
+// Lightbox Styles
+.gallery-lightbox {
+  display: block;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 
 
 //  Gallery section end

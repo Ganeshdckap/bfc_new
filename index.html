@@ -40,6 +40,9 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   </head>
 
   <body>
@@ -199,7 +202,6 @@
     </div>
     <!-- end whatsapp book appointment -->
 
-
     <!-- about section -->
 
     <section id="about_section" class="about_section layout_margin-bottom">
@@ -260,7 +262,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-md-3">
               <div class="box">
                 <div class="img-box">
@@ -422,58 +424,80 @@
 
     <!-- end doctor section -->
 
-      <!-- ======= Gallery Section ======= -->
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- ======= Gallery Section ======= -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-      <section id="gallery_section" class="gallery_section">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Gallery</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-          </div>
-      
-          <div class="gallery-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
+    <section id="gallery_section" class="gallery_section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
         </div>
-      </section>
-      
-      <script>
-        var swiper = new Swiper('.gallery-slider', {
-          slidesPerView: 4,
-          spaceBetween: 30,
-          loop: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-      </script>
-      
+    
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper">
+            <!-- Each swiper-slide contains an image -->
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/gallery-1.jpg">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="Image 1" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/gallery-2.jpg">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="Image 2" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/gallery-3.jpg">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="Image 3" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/gallery-4.jpg">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="Image 4" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/gallery-5.jpg">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="Image 5" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/gallery-6.jpg">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="Image 6" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/gallery-7.jpg">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="Image 7" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/gallery-8.jpg">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="Image 8" />
+              </a>
+            </div>
+            <!-- Add more swiper-slide for additional images -->
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Navigation arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    
 
-
-      <!-- End Gallery Section -->
+    <!-- End Gallery Section -->
     <!-- contact section -->
     <section class="contact_section layout_padding">
       <div class="container">
@@ -563,7 +587,7 @@
                     </div>
                     <div class="detail-box">
                       <div class="name">
-                        <h6> Emerson</h6>
+                        <h6>Emerson</h6>
                       </div>
                       <p>
                         Enim consequatur odio assumenda voluptas voluptatibus
@@ -750,6 +774,9 @@
       </div>
     </footer>
     <!-- footer section -->
+
+     <!-- gallery section -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- jQery -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
